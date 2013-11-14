@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Monitoramento de Ônibus</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_help">Ajuda</string>
+    <string name="action_horarios">Horários</string>
+
+</resources>
