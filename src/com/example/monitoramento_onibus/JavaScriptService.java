@@ -1,6 +1,5 @@
 package com.example.monitoramento_onibus;
 
-import android.util.Log;
 import android.webkit.JavascriptInterface;
 
 public class JavaScriptService {

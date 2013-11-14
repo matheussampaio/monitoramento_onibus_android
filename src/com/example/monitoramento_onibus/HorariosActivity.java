@@ -8,6 +8,10 @@ import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -35,8 +39,6 @@ public class HorariosActivity extends Activity {
         } else {
             new DownloadWebpageTask().execute("http://192.168.1.244:3001/onibus?placa=ABC-0001");
         }
-        
-            
     }
 
     @Override
@@ -60,7 +62,19 @@ public class HorariosActivity extends Activity {
         // onPostExecute displays the results of the AsyncTask.
         @Override
         protected void onPostExecute(String result) {
-            Log.d(DEBUG_TAG, result);
+            JSONObject mainObject;
+            JSONArray rowsObject;
+            
+            try {
+                mainObject = new JSONObject(result);
+                Log.d(DEBUG_TAG, mainObject.toString());
+                
+                rowsObject = mainObject.getJSONArray("rows");
+                Log.d(DEBUG_TAG, rowsObject.toString());
+                
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
        }
     }
     
@@ -88,7 +102,7 @@ public class HorariosActivity extends Activity {
         InputStream is = null;
         // Only display the first 500 characters of the retrieved
         // web page content.
-        int len = 500;
+        int len = 1024*2;
 
         try {
             URL url = new URL(myurl);
