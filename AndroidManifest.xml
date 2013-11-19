@@ -45,6 +45,14 @@
             android:value="com.example.monitoramento_onibus.MainActivity" />
         </activity>
         
+        <activity
+            android:name="com.example.monitoramento_onibus.RotaActivity"
+            android:parentActivityName="com.example.monitoramento_onibus.HorariosActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.monitoramento_onibus.HorariosActivityActivity" />
+        </activity>
+        
     </application>
 
 </manifest>

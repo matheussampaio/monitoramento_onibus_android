@@ -12,5 +12,15 @@
         android:id="@+id/webView_Map"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/webView_Map"
+        android:layout_alignRight="@+id/webView_Map"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_menu_refresh" />
     
 </RelativeLayout>
