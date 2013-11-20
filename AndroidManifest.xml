@@ -46,7 +46,7 @@
         </activity>
         
         <activity
-            android:name="com.example.monitoramento_onibus.RotaActivity"
+            android:name="com.example.monitoramento_onibus.ListHorarioActivity"
             android:parentActivityName="com.example.monitoramento_onibus.HorariosActivity" >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"

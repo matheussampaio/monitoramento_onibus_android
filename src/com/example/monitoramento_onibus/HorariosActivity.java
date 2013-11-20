@@ -8,7 +8,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -22,7 +21,6 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
@@ -86,11 +84,11 @@ public class HorariosActivity extends Activity {
                 mainObject = new JSONObject(result);
 
                 try {
-                    ProgressBar progress = (ProgressBar) findViewById(R.id.progressBar1);
+                    ProgressBar progress = (ProgressBar) findViewById(R.id.progressBarRota);
                     
                     progress.setVisibility(View.GONE);
                     
-                    LinearLayout ll = (LinearLayout) findViewById(R.id.linearLayout1);
+                    LinearLayout ll = (LinearLayout) findViewById(R.id.linearLayoutRota);
                     LayoutParams lp = new ActionBar.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
                     TextView tv = new TextView(this.context);
                     tv.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -111,7 +109,7 @@ public class HorariosActivity extends Activity {
                                 
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intentRota = new Intent(this.context, RotaActivity.class);
+                                    Intent intentRota = new Intent(this.context, ListHorarioActivity.class);
                                     
                                     intentRota.putExtra("json", jsonObject.toString());
                                     intentRota.putExtra("title", nomeRota);

@@ -17,7 +17,9 @@ import com.example.monitoramento_onibus.utils.Utils;
 public class MainActivity extends Activity {
     private static final int SHOW_SUBACTIVITY_SETTINGS = 1001;
     private static final int SHOW_SUBACTIVITY_HORARIOS = 1002;
-
+    
+    private WebView mapView;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,16 +28,20 @@ public class MainActivity extends Activity {
         if (!Utils.isConnected((Activity) this)) {
             showNotConnected();
         }
-
-        WebView webView = (WebView)findViewById(R.id.webView_Map);
         
-        Point size = new Point();
-        getWindowManager().getDefaultDisplay().getSize(size);
-        webView.addJavascriptInterface(new JavaScriptService(size.x, size.y), "mainService");
-        
-        webView.getSettings().setJavaScriptEnabled(true);
-        
-        webView.loadUrl("file:///android_asset/index.html");
+        if (mapView == null) {
+            mapView = (WebView) findViewById(R.id.webView_Map);
+            
+            Point size = new Point();
+            getWindowManager().getDefaultDisplay().getSize(size);
+            
+            mapView.addJavascriptInterface(new JavaScriptService(size.x, size.y), "mainService");
+            
+            mapView.getSettings().setJavaScriptEnabled(true);
+            
+            mapView.loadUrl("file:///android_asset/index.html");
+            
+        }
     }
 
     @Override

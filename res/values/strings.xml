@@ -5,5 +5,7 @@
     <string name="action_settings">Configurações</string>
     <string name="action_help">Ajuda</string>
     <string name="action_horarios">Horários</string>
+    <string name="ponto_onibus">Ponto de Ônibus</string>
+    <string name="horario">Horário</string>
 
 </resources>
