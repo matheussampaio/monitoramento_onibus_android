@@ -59,7 +59,11 @@
             map.addLayers([layer_OSM, layer_rota, layer_pontos_onibus, layer_onibus]);
 
             map.zoomTo(15);
-        };
+        }
+        
+        function refresh() {
+            map.getLayersByName('Ônibus')[0].redraw(true);
+        }
 
         </script>
 

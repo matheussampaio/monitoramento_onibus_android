@@ -9,7 +9,11 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.monitoramento_onibus.utils.Utils;
 
@@ -42,6 +46,16 @@ public class MainActivity extends Activity {
             mapView.loadUrl("file:///android_asset/index.html");
             
         }
+        
+        ImageButton btn = (ImageButton) findViewById(R.id.imageButton1);
+        
+        btn.setOnClickListener(new OnClickListener() {
+            
+            @Override
+            public void onClick(View v) {
+                mapView.loadUrl("javascript:refresh()");
+            }
+        });
     }
 
     @Override
@@ -87,4 +101,9 @@ public class MainActivity extends Activity {
         alerta.show();
     }
     
+    
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
 }
