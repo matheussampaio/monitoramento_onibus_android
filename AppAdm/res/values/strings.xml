@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusTracker - ADM</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_help">Ajuda</string>
+    <string name="action_horarios">Horários</string>
+    <string name="action_pontoonibus">Pontos de Ônibus</string>
+    <string name="action_onibus">Onibus</string>
+    <string name="ponto_onibus">Ponto de Ônibus</string>
+    <string name="horario">Horário</string>
+    <string name="refresh">Atualizar</string>
+    <string name="connection_unavailable">Conexão indisponível</string>
+    <string name="cant_without_connection">Não pode completar essa ação sem conexão</string>
+    <string name="rotas">Rotas</string>
+    <string name="no_rota">Não há Rotas</string>
+    <string name="error">Erro</string>
+    <string name="exit">Sair</string>
+    <string name="rota_for_title">Rota</string>
+    <string name="remove">Remover</string>
+    
+
+</resources>
