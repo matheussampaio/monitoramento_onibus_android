@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
     private static final int SHOW_SUBACTIVITY_SETTINGS = 1001;
     private static final int SHOW_SUBACTIVITY_HORARIOS = 1002;
     private static final int SHOW_SUBACTIVITY_ONIBUS = 1003;
+    private static final int SHOW_SUBACTIVITY_ROTES = 1004;
     private WebView mapView;
 
     @Override
@@ -77,6 +78,16 @@ public class MainActivity extends Activity {
                 Intent intentOnibus = new Intent(this, SettingsActivity.class);
                 this.startActivityForResult(intentOnibus,
                         SHOW_SUBACTIVITY_ONIBUS);
+            }
+            return true;
+        case R.id.action_rotes:
+            if (!Utils.isConnected(this)) {
+                Utils.showCantWithoutConnection(this);
+            } else {
+                Intent intentRotes = new Intent(this,
+                        RotesActivity.class);
+                this.startActivityForResult(intentRotes,
+                        SHOW_SUBACTIVITY_HORARIOS);
             }
             return true;
         case R.id.action_help:

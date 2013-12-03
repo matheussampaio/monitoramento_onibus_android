@@ -71,6 +71,11 @@
             android:value="com.example.monitoramento_onibus.MainActivity" />
         </activity>
         
+        <activity
+            android:name="com.example.monitoramento_onibus.RotesActivity"
+            android:label="@string/action_rotes">
+        </activity>
+        
     </application>
 
 </manifest>

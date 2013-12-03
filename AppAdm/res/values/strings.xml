@@ -8,6 +8,8 @@
     <string name="action_pontoonibus">Pontos de Ônibus</string>
     <string name="action_onibus">Onibus</string>
     <string name="ponto_onibus">Ponto de Ônibus</string>
+    <string name="rotes">Rotas</string>
+    <string name="action_rotes">Rotas</string>
     <string name="horario">Horário</string>
     <string name="refresh">Atualizar</string>
     <string name="connection_unavailable">Conexão indisponível</string>
