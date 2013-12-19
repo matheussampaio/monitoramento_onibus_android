@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FugaRotaActivity" >
+	
+    <ProgressBar
+        android:id="@+id/progressBarFR"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    
+    <ListView
+        android:id="@+id/list_view_fugarota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:drawSelectorOnTop="false" />
+    
+    <TextView 
+    	android:id="@+id/textViewEmptyFugarota"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+    	android:text="@string/empty_fuga_rota" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'ungit' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.15
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'ungit', null ]
+7 verbose cache add name=undefined spec="ungit" args=["ungit",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'ungit',
+8 verbose parsed url   path: 'ungit',
+8 verbose parsed url   href: 'ungit' }
+9 silly lockFile b5f3d853-ungit ungit
+10 verbose lock ungit /home/treinamento-sony/.npm/b5f3d853-ungit.lock
+11 silly lockFile b5f3d853-ungit ungit
+12 silly lockFile b5f3d853-ungit ungit
+13 verbose addNamed [ 'ungit', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 8d18b492-ungit ungit@
+16 verbose lock ungit@ /home/treinamento-sony/.npm/8d18b492-ungit.lock
+17 silly addNameRange { name: 'ungit', range: '*', hasData: false }
+18 verbose url raw ungit
+19 verbose url resolving [ 'https://registry.npmjs.org/', './ungit' ]
+20 verbose url resolved https://registry.npmjs.org/ungit
+21 info trying registry request attempt 1 at 17:56:09
+22 verbose etag "9TY6LA86X84HV0WX3QH6NNJWD"
+23 http GET https://registry.npmjs.org/ungit
+24 http 304 https://registry.npmjs.org/ungit
+25 silly registry.get cb [ 304,
+25 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"9TY6LA86X84HV0WX3QH6NNJWD"',
+25 silly registry.get     date: 'Thu, 05 Dec 2013 19:56:12 GMT',
+25 silly registry.get     'content-length': '0' } ]
+26 verbose etag ungit from cache
+27 silly addNameRange number 2 { name: 'ungit', range: '*', hasData: true }
+28 silly addNameRange versions [ 'ungit',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.9',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0' ] ]
+29 verbose addNamed [ 'ungit', '0.6.0' ]
+30 verbose addNamed [ '0.6.0', '0.6.0' ]
+31 silly lockFile ca0a8d47-ungit-0-6-0 ungit@0.6.0
+32 verbose lock ungit@0.6.0 /home/treinamento-sony/.npm/ca0a8d47-ungit-0-6-0.lock
+33 verbose read json /home/treinamento-sony/.npm/ungit/0.6.0/package/package.json
+34 silly lockFile ca0a8d47-ungit-0-6-0 ungit@0.6.0
+35 silly lockFile ca0a8d47-ungit-0-6-0 ungit@0.6.0
+36 silly lockFile 8d18b492-ungit ungit@
+37 silly lockFile 8d18b492-ungit ungit@
+38 silly resolved [ { name: 'ungit',
+38 silly resolved     author: { name: 'Fredrik Norén', email: 'fredrik.jw.noren@gmail.com' },
+38 silly resolved     description: 'Git made easy',
+38 silly resolved     version: '0.6.0',
+38 silly resolved     scripts: { start: 'node ./bin/ungit', test: 'grunt test' },
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'https://github.com/FredrikNoren/ungit.git' },
+38 silly resolved     bin:
+38 silly resolved      { ungit: './bin/ungit',
+38 silly resolved        '0ungit-credentials-helper': './bin/credentials-helper' },
+38 silly resolved     dependencies:
+38 silly resolved      { express: '~3.4.4',
+38 silly resolved        superagent: '~0.15.7',
+38 silly resolved        lodash: '~2.3.0',
+38 silly resolved        temp: '0.6.0',
+38 silly resolved        'socket.io': '0.9.16',
+38 silly resolved        moment: '~2.4.0',
+38 silly resolved        async: '0.2.9',
+38 silly resolved        ssh2: '~0.2.14',
+38 silly resolved        rc: '~0.3.1',
+38 silly resolved        uuid: '1.4.1',
+38 silly resolved        winston: '~0.7.2',
+38 silly resolved        passport: '0.1.17',
+38 silly resolved        'passport-local': '0.1.6',
+38 silly resolved        npm: '~1.3.14',
+38 silly resolved        semver: '~2.2.1',
+38 silly resolved        'forever-monitor': '1.1.0',
+38 silly resolved        open: '0.0.4',
+38 silly resolved        optimist: '0.6.0',
+38 silly resolved        crossroads: '~0.12.0',
+38 silly resolved        signals: '~1.0.0',
+38 silly resolved        hasher: '~1.2.0',
+38 silly resolved        'blueimp-md5': '~1.1.0',
+38 silly resolved        color: '~0.4.4',
+38 silly resolved        'keen.io': '0.0.3',
+38 silly resolved        getmac: '~1.0.6',
+38 silly resolved        'deep-extend': '~0.2.6',
+38 silly resolved        raven: '~0.6.0' },
+38 silly resolved     devDependencies:
+38 silly resolved      { mocha: '~1.14.0',
+38 silly resolved        'expect.js': '0.2.0',
+38 silly resolved        supertest: '~0.8.1',
+38 silly resolved        grunt: '0.4.1',
+38 silly resolved        'grunt-contrib-less': '~0.8.2',
+38 silly resolved        'grunt-contrib-watch': '~0.5.3',
+38 silly resolved        'grunt-lineending': '0.2.1',
+38 silly resolved        'grunt-release': '~0.6.0',
+38 silly resolved        'grunt-simple-mocha': '0.4.0',
+38 silly resolved        'grunt-plato': '0.2.1',
+38 silly resolved        'grunt-contrib-imagemin': '~0.3.0',
+38 silly resolved        'grunt-image-embed': '0.3.1',
+38 silly resolved        'grunt-browserify': '~1.2.11',
+38 silly resolved        phantomjs: '~1.9.2-2',
+38 silly resolved        'ansi-color': '~0.2.1',
+38 silly resolved        'grunt-contrib-jshint': '~0.7.2',
+38 silly resolved        'grunt-contrib-copy': '~0.4.1',
+38 silly resolved        'node-webkit-builds': '~0.8.0',
+38 silly resolved        'grunt-curl': '~1.2.1',
+38 silly resolved        unzip: '~0.1.9',
+38 silly resolved        'grunt-contrib-clean': '~0.5.0' },
+38 silly resolved     engines: { node: '>=0.10' },
+38 silly resolved     license: 'MIT',
+38 silly resolved     _node_webkit_config: '',
+38 silly resolved     main: 'public/nwlauncher.html',
+38 silly resolved     window:
+38 silly resolved      { title: 'Ungit',
+38 silly resolved        icon: 'icon.png',
+38 silly resolved        toolbar: false,
+38 silly resolved        frame: false,
+38 silly resolved        show: false,
+38 silly resolved        width: 1000,
+38 silly resolved        height: 600,
+38 silly resolved        position: 'center',
+38 silly resolved        min_width: 400,
+38 silly resolved        min_height: 200 },
+38 silly resolved     readme: 'ungit\r\n======\r\n[![NPM version](https://badge.fury.io/js/ungit.png)](http://badge.fury.io/js/ungit)\r\n[![Build Status](https://travis-ci.org/FredrikNoren/ungit.png)](https://travis-ci.org/FredrikNoren/ungit)\r\n\r\nThe easiest way to use git. On any platform. Anywhere.\r\n\r\n * Clean and intuitive UI that makes it easy to _understand_ git.\r\n * Runs on any platform that node.js & git supports.\r\n * Web-based, meaning you can run it on your cloud/pure shell machine and use the ui from your browser (just browse to http://your-cloud-machine.com:8448).\r\n * Works well with GitHub.\r\n * [Gerrit](https://code.google.com/p/gerrit/) integration (view, checkout and push changes from/to gerrit).\r\n\r\n[Follow @ungitui on twitter](https://twitter.com/ungitui)\r\n\r\nQuick intro to ungit: [http://youtu.be/hkBVAi3oKvo](http://youtu.be/hkBVAi3oKvo)\r\n\r\n[![Screenshot](/screenshot.png)](http://youtu.be/hkBVAi3oKvo)\r\n\r\nInstalling\r\n----------\r\nRequires [node.js](http://nodejs.org) (≥ 0.10), [npm](https://npmjs.org/) (≥ 1.3.1, comes with node.js) and [git](http://git-scm.com/) (≥ 1.8.x). To install ungit just type:\r\n\r\n\tnpm install -g ungit\r\n\r\nNOTE: If your system requires root access to install global npm packages, make sure you use the -H flag:\r\n\r\n\tsudo -H npm install -g ungit\r\n\r\nUsing\r\n-----\r\nAnywhere you want to start, just type:\r\n\r\n\tungit\r\n\r\nThis will launch the server and open up a browser with the ui.\r\n\r\nConfiguring\r\n---------\r\nPut a configuration file called .ungitrc in your home directory (`/home/USERNAME` on *nix, `C:/Users/USERNAME/` on windows). Can be in either json or ini format. See source/config.js for available options.\r\n\r\nYou can also override configuration variables at launch by specifying them as command line arguments; `ungit --port=8080`. To disable boolean features use --no: `ungit --no-autoFetch`.\r\n\r\nExample of `~/.ungitrc` configuration file to change default port and enable bugtracking:\r\n\r\n```json\r\n{\r\n\t"port": 8080,\r\n\t"bugtracking": true\r\n}\r\n```\r\n\r\nUngit uses [rc](https://github.com/dominictarr/rc) for configuration, which in turn uses [optimist](https://github.com/substack/node-optimist) for command line arguments. See corresponding documentations for more details.\r\n\r\nDeveloping\r\n----------\r\n\r\n[![Dependency Status](https://david-dm.org/FredrikNoren/ungit.png)](https://david-dm.org/FredrikNoren/ungit)\r\n[![devDependency Status](https://david-dm.org/FredrikNoren/ungit/dev-status.png)](https://david-dm.org/FredrikNoren/ungit#info=devDependencies)\r\n\r\nTo get started developing on ungit:\r\n\r\n 1. Clone the repository to a local directory.\r\n 2. Run `npm install` to install dependencies.\r\n 3. Run `grunt` to build (compile templates, css and js). If you haven\'t installed grunt already type `npm install -g grunt-cli` first.\r\n 4. Type `npm start` to start ungit, or `npm test` to run tests.\r\n\r\nKnown issues\r\n------------\r\n\r\n* If you\'re running MacOSX Mavericks and Ungit crashes after a few seconds; try updating npm and node. See [#259](https://github.com/FredrikNoren/ungit/issues/259) and [#249](https://github.com/FredrikNoren/ungit/issues/249) for details.\r\n\r\nLicense (MIT)\r\n-------------\r\n\r\nCopyright (C) 2013 Fredrik Norén\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     _id: 'ungit@0.6.0',
+38 silly resolved     _from: 'ungit@' } ]
+39 info install ungit@0.6.0 into /usr/local/lib
+40 info installOne ungit@0.6.0
+41 verbose from cache /home/treinamento-sony/.npm/ungit/0.6.0/package/package.json
+42 info /usr/local/lib/node_modules/ungit unbuild
+43 verbose read json /usr/local/lib/node_modules/ungit/package.json
+44 info preuninstall ungit@0.6.0
+45 info uninstall ungit@0.6.0
+46 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild ungit@0.6.0
+47 verbose /usr/local/bin,[object Object] binRoot
+48 info /usr/local/lib/node_modules/ungit unbuild
+49 verbose read json /usr/local/lib/node_modules/ungit/package.json
+50 info preuninstall ungit@0.6.0
+51 info uninstall ungit@0.6.0
+52 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild ungit@0.6.0
+53 verbose /usr/local/bin,[object Object] binRoot
+54 error error rolling back Error: EACCES, unlink '/usr/local/bin/ungit'
+54 error error rolling back  ungit@0.6.0 { [Error: EACCES, unlink '/usr/local/bin/ungit'] errno: 3, code: 'EACCES', path: '/usr/local/bin/ungit' }
+55 error Error: EACCES, unlink '/usr/local/bin/ungit'
+55 error  { [Error: EACCES, unlink '/usr/local/bin/ungit'] errno: 3, code: 'EACCES', path: '/usr/local/bin/ungit' }
+56 error Please try running this command again as root/Administrator.
+57 error System Linux 3.11.0-14-generic
+58 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "ungit"
+59 error cwd /home/treinamento-sony/workspace/MonitoramentoOnibus/AppAdm
+60 error node -v v0.10.15
+61 error npm -v 1.2.18
+62 error path /usr/local/bin/ungit
+63 error code EACCES
+64 error errno 3
+65 error stack Error: EACCES, unlink '/usr/local/bin/ungit'
+66 verbose exit [ 3, true ]

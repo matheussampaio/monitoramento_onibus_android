@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.monitoramento_onibus"
+    package="com.sony.monitoramento_onibus"
     android:versionCode="1"
     android:versionName="1.0" >
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-sdk
         android:minSdkVersion="13"
         android:targetSdkVersion="19" />
@@ -15,62 +23,88 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
-        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB3NwP1qPLJHYRXkM6LhVg_ih20B-rLxEw" />
+
         <activity
-            android:name="com.example.monitoramento_onibus.MainActivity"
+            android:name="com.sony.monitoramento_onibus.screens.MainActivity"
             android:label="@string/app_name"
-            android:launchMode="singleInstance" >
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name="com.example.monitoramento_onibus.SettingsActivity"
-            android:label="@string/action_settings"
-            android:parentActivityName="com.example.monitoramento_onibus.MainActivity" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.monitoramento_onibus.MainActivity" />
+            android:name="com.sony.monitoramento_onibus.screens.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
         </activity>
-        
         <activity
-            android:name="com.example.monitoramento_onibus.RotasActivity"
-            android:label="@string/action_horarios"
-            android:parentActivityName="com.example.monitoramento_onibus.MainActivity" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.monitoramento_onibus.MainActivity" />
+            android:name="com.sony.monitoramento_onibus.screens.horarios.RotaHorarioActivity"
+            android:label="@string/horarios"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
         </activity>
-        
         <activity
-            android:name="com.example.monitoramento_onibus.HorariosActivity"
-            android:parentActivityName="com.example.monitoramento_onibus.RotasActivity" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.monitoramento_onibus.HorariosActivityActivity" />
+            android:name="com.sony.monitoramento_onibus.screens.horarios.HorariosActivity"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.horarios.RotaHorarioActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.horarios.RotaHorarioActivity" />
         </activity>
-
         <activity
-            android:name="com.example.monitoramento_onibus.OnibusActivity"
-            android:label="@string/action_onibus"
-            android:parentActivityName="com.example.monitoramento_onibus.MainActivity" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.monitoramento_onibus.MainActivity" />
+            android:name="com.sony.monitoramento_onibus.screens.pontoonibus.PontoOnibusActivity"
+            android:label="@string/pontos_onibus"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
         </activity>
-        
         <activity
-            android:name="com.example.monitoramento_onibus.PontoOnibusActivity"
-            android:label="@string/action_pontoonibus"
-            android:parentActivityName="com.example.monitoramento_onibus.MainActivity" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.monitoramento_onibus.MainActivity" />
+            android:name="com.sony.monitoramento_onibus.screens.onibus.OnibusActivity"
+            android:label="@string/onibus"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
+        </activity> 
+        <activity
+            android:name="com.sony.monitoramento_onibus.screens.rotas.RotasActivity"
+            android:label="@string/rotas"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
         </activity>
-        
+        <activity
+            android:name="com.sony.monitoramento_onibus.screens.DialogRemove"
+            android:label="@string/title_activity_dialog_remove" >
+        </activity>
+        <activity
+            android:name="com.sony.monitoramento_onibus.screens.horarios.HorariosManagerActivity"
+            android:label="@string/action_gerenciar_horarios"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.sony.monitoramento_onibus.screens.fugaRota.FugaRotaActivity"
+            android:label="@string/title_activity_fuga_rota"
+            android:parentActivityName="com.sony.monitoramento_onibus.screens.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sony.monitoramento_onibus.screens.MainActivity" />
+        </activity>
+     
     </application>
 
 </manifest>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.91" >
+
+        <Spinner
+            android:id="@+id/spinnerRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TvRota"
+            android:layout_alignRight="@+id/TvRota"
+            android:layout_below="@+id/TvRota"
+            android:layout_marginTop="22dp"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <EditText
+            android:id="@+id/editPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvPlaca"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="11"
+            android:hint="@string/hint_placa"
+            android:inputType="none" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TvPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/placa_onibus"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TvRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TvPlaca"
+            android:layout_below="@+id/editPlaca"
+            android:layout_marginTop="28dp"
+            android:text="@string/rota"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout> 
+    
+
+</LinearLayout>

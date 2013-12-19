@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView
+            android:id="@+id/TextViewRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/rotas"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spinner_add_ponto_Rota"
+            android:layout_width="104dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal" />
+    
+    
+    
+    <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ponto_anterior"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spPontoAnterior"
+            android:layout_width="104dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ponto_novo"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spPontoNovo"
+            android:layout_width="97dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ponto_posteior"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spPontoPosterior"
+            android:layout_width="89dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

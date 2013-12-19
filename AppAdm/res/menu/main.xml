@@ -1,37 +1,49 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    
     <item
         android:id="@+id/action_horarios"
         android:orderInCategory="1"
         android:showAsAction="ifRoom"
-        android:title="@string/action_horarios" >
+        android:title="@string/horarios">
     </item>
-    
     <item
         android:id="@+id/action_onibus"
         android:orderInCategory="2"
         android:showAsAction="never"
-        android:title="@string/action_onibus"/>
-    
+        android:title="@string/onibus"/>
     <item
         android:id="@+id/action_pontoonibus"
         android:orderInCategory="3"
         android:showAsAction="never"
-        android:title="@string/action_pontoonibus" >
+        android:title="@string/ponto_onibus">
     </item>
-    
+    <item
+        android:id="@+id/action_rotes"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/rotas">
+    </item>
+    <item
+        android:id="@+id/action_gerenciar_horarios"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/action_gerenciar_horarios"/>
     <item
         android:id="@+id/action_help"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_help">
+        android:title="@string/help">
     </item>
-    
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="99"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
-    
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/action_fugarotas"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/title_activity_fuga_rota">
+    </item>
+
 </menu>
