@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Monitoramento de Ônibus</title>
+
+        <meta name="description" content="Apresentação sobre Monitoramento de Ônibus">
+        <meta name="author" content="Matheus Sampaio, Pablo Herivelton, Raiff Ramalho e Wesley Brenno ">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h2><b>Monitoramento de Ônibus</b></h1>
+                    <br>
+                    <p>Sistema para transportes públicos baseado em localização.</p>
+                </section>
+
+                <section>
+                    <h3><b>Grupo</b></h3>
+                    <br>
+                    <ul>
+                        <li><a href="https://github.com/matheussampaio" target="_blank">@matheussampaio</a></li>
+                        <li><a href="https://github.com/pabloestrela" target="_blank">@pabloestrela</a></li>
+                        <li><a href="https://github.com/pherivelton" target="_blank">@pherivelton</a></li>
+                        <li><a href="https://github.com/RaiffRamalho" target="_blank">@RaiffRamalho</a></li>
+                        <li><a href="https://github.com/WesleyBrenno" target="_blank">@WesleyBrenno</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3><b>Objetivo</b></h3>
+                    <br>
+                    <p>Prover um sistema que use a localização dos ônibus para determinar algumas informações uteis, tanto para um possível administrador como para um usuário final do sistema de transportes.</p>
+                </section>
+
+
+                <section>
+                    <h3><b>Demonstração</b></h3>
+                    <br>
+                    <p><a href="http://192.168.1.244:4567/home" target="_blank">Home Page</a></p>
+                </section>
+
+                <section>
+                    <h5>Tecnologias</h5>
+                    <br>
+                    <ul>
+                        <li>Gerrit Code Review</li>
+                        <li>git</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3><b>Modelo de Alto Nível</b></h3>
+                    <br>
+                    <a href="#" class="image navigate-down">
+                        <img src="img/modelo2.png" alt="Down arrow">
+                    </a>
+                </section>
+
+                <section>
+                    <h5>Dúvidas?</h5>
+                    <br>
+                    <h1>Obrigado!</h1>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
